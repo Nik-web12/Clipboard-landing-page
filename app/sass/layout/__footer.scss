@@ -1,0 +1,163 @@
+
+.footer{
+    background: $FooterBackground;
+    padding-top: rem(40);
+    @include max(1080px){
+        margin-top: rem(120);
+        padding: rem(47) 0px;
+    }
+    &__content{
+        margin: 0 auto;
+        max-width: 72rem;
+        padding: 0 rem(20);
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 2fr 1fr;
+        @include max(1080px){
+            grid-template-columns: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    &__logo{
+        &:focus{
+            outline: rem(3) dotted $StrongCyan;
+            outline-offset:  0.35rem;
+        }
+        img{
+            width: 26%;       
+            @include max(1080px){
+                width: 48%;
+                object-fit: cover;
+            }
+        }
+        @include max(1080px){
+            margin-left: rem(60);
+        }
+    }
+
+    &__links{
+        margin: 0 rem(-74);
+        ul{
+            padding-left: rem(68);
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-row-gap: rem(18);
+            @include max(1080px){
+                grid-template-columns: auto;
+                margin-top: rem(25);
+            }
+        }
+        li{
+            @include max(1080px){
+                text-align: center;
+                margin-top: rem(10);
+                margin-right: rem(80);
+            }
+            a{
+                color: $DarkGrayishBlue;
+                font-size: rem(18);
+                white-space: nowrap;
+                position: relative;
+                transition: 0.4s ease-in-out;
+                &:focus{
+                    outline: rem(3) dotted $StrongCyan;
+                    outline-offset:  0.35rem;
+                }
+                &::after{
+                    content: "";
+                    display: block;
+                    height: rem(3);
+                    width: 0%;
+                    background: $StrongCyan;
+                    position: absolute;
+                    top: 24px;
+                    visibility: hidden;
+                    transform: scaleX(1);
+                    transition: 0.3s ease-in-out;
+                }
+                &:hover::after{
+                    transform: scaleX(0);
+                    width: 100%;
+                    height: 0;
+                    visibility: visible;
+                }
+                &:hover{
+                    color: $StrongCyan;
+                }
+            }
+        }
+        .ml{
+            margin-left: rem(40);
+            @include max(1080px){
+                margin-left: 0px;
+            }
+        }
+    }
+
+    &__social-media{
+        margin-left: rem(400);
+        margin-top: rem(20);
+        display: flex;
+        @include max(1080px){
+            margin-left: 0px;
+            margin-top: rem(47);
+        }
+        a{
+            margin: 0 rem(9);
+            @include max(1080px){
+                margin: 0 rem(20);
+            }
+            img{
+                &:hover{
+                    animation: shake 0.3s ease-in-out;
+                    cursor: pointer;
+                    filter: 
+                    invert(53%) 
+                    sepia(100%) 
+                    saturate(306%) 
+                    hue-rotate(122deg) 
+                    brightness(93%) 
+                    contrast(97%);
+                }
+            }
+        }
+    }
+}
+
+
+// ************************************ Toggle ********************************************** \\
+.m{
+    background: #202020c9;
+    @include max(800px){
+        background: url(/images/pexels-drift-shutterbug-2085998.jpg);
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    li{
+        a{
+            color: #fff;
+        }
+    }
+    .footer__social-media{
+        a{
+            img{
+                filter: brightness(0) invert(1);
+                &:hover{
+                    filter: 
+                    invert(53%) 
+                    sepia(100%) 
+                    saturate(306%) 
+                    hue-rotate(122deg) 
+                    brightness(93%) 
+                    contrast(97%);
+                }
+            }
+        }
+    }
+}
+

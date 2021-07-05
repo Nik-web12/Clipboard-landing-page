@@ -1,0 +1,74 @@
+.download{
+    @extend %flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: rem(31);
+    padding-bottom: rem(106);
+    @include max(1080px){
+        padding: 0px 30px;
+    }
+    &__text{
+        text-align: center;
+        h6{
+            font-size: rem(35);
+            padding-bottom: rem(23);
+            @include max(720px){
+                font-size: rem(29);
+                padding-bottom: rem(17);
+            }
+        }
+        p{
+            font-size: rem(17);
+            line-height: 1.6;
+            max-width: 43rem;
+            margin: 0 auto;
+            word-spacing: 3.5px;
+            @include max(720px){
+                font-size: rem(15.5);
+                max-width: 30rem;
+                margin: 0 auto;
+            }
+        }        
+    }
+    &__btn{
+        margin: rem(67) 0;   
+        @include max(720px){
+            margin: rem(17) 0;
+        }
+        
+        a{
+            padding: rem(19) rem(39);
+            margin: 0px rem(5);
+            border-radius: 50px;
+            font-size: rem(16);
+            letter-spacing: 1px;
+            font-weight: 600;
+            color: #fff;
+            box-shadow: 0px -5px 0px 0px rgba(0, 0, 0, 0.281) inset;
+            position: relative;
+            transition: 0.3s ease-in-out;
+            @include max(720px){
+                display: block;
+                padding: rem(19) rem(75);
+                margin: rem(29) 0;
+            }
+            @include max(365px){
+                display: block;
+                padding: rem(15) rem(40);
+                margin: rem(29) 0;
+                font-size: rem(14);
+            }
+            &:hover{
+                box-shadow: none;
+                opacity: 0.8;
+            }
+        }
+        .ios{
+            background: $StrongCyan;
+        }
+        .mac{
+            background: $LightBlue;
+        }
+    }
+}

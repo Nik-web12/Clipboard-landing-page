@@ -1,0 +1,51 @@
+.access{
+    padding-top: rem(32);
+    @include max(1080px){
+        padding: 0 rem(30);
+    }
+    &__content{
+        @extend %flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text{
+        text-align: center;
+        margin-top: 115px;
+        @include max(720px){
+            padding-top: rem(22);
+        }
+        h3{
+            font-size: rem(35);
+            padding-bottom: rem(21);
+            text-transform: capitalize;
+            @include max(720px){
+                font-size: rem(27);
+                padding-bottom: rem(17);
+            }
+        }
+        p{
+            font-size: rem(18.2);
+            max-width: 44.5rem;
+            line-height: 1.6;
+            margin: 0 auto;
+            @include max(720px){
+                font-size: rem(16.5);
+                max-width: 44.5rem;
+                margin: 0 auto;
+            }        
+        }
+    }
+
+    &__img{
+        margin-top: rem(100);
+        @include max(1080px){
+            margin-top: rem(58);
+            img{
+                display: inline-block;
+                max-width: 100%;
+            }
+        }
+    }
+}

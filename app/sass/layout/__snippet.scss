@@ -1,0 +1,113 @@
+.snippet{
+    @include max(1080px){
+        padding: 0 rem(30);
+    }
+    &__text{
+        @extend %flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .text{
+            padding-top: rem(39);
+            @include max(720px){
+                padding-top: rem(9);
+            }
+            h2{
+                font-size: rem(34.5);
+                letter-spacing: 0.1px;
+                @include max(720px){
+                    font-size: rem(27);
+                    // max-width: 29rem;
+                    // margin: 0 auto;
+                }
+                @include max(720px){
+                    font-size: rem(27);
+                    max-width: 29rem;
+                    margin: 0 auto;
+                }
+            }
+            p{
+                font-size: rem(18);
+                max-width: 45rem;
+                margin: 0 auto;
+                line-height: 1.6;
+                padding-top: rem(20);
+                @include max(720px){
+                    font-size: rem(16);
+                    max-width: 45rem;
+                    margin: 0 auto;
+                    line-height: 1.6;
+                    padding-top: rem(19);
+                }
+                @include max(376px){
+                    max-width: 19rem;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    &__content{
+        @extend %flex;
+        margin-top: rem(83);
+        @include max(1080px){
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+       
+        @include max(720px){
+            margin-top: rem(66);
+        }
+        .img{
+            margin-left: rem(-31);
+            @include max(1200px){
+                margin-left: rem(-140);
+            }
+            @include max(1080px){
+                margin-left: 0px;
+                img{
+                    display: inline-block;
+                    max-width: 100%;
+                }
+            }
+        }
+        .text{
+            padding: rem(68.5) rem(108);
+            @include max(1080px){
+                text-align: center;
+                padding: rem(50) 0;
+            }
+            h2{
+                display: block;
+                font-size: rem(24);
+                font-weight: 600;
+                color: $DarkGrayishBlue;
+                padding-bottom: rem(10);
+                @include max(720px){
+                    font-size: rem(24);
+                }
+            }
+            p{
+                font-size: rem(16.2);
+                max-width: 21.5rem;
+                line-height: 1.7;
+                @include max(1200px){
+                    max-width: 25rem;
+                }
+                @include max(720px){
+                    word-spacing: rem(3);
+                    font-size: rem(15.5);
+                    max-width: 21.5rem;
+                    margin: 0 auto;
+                }
+            }
+            .text-2{
+                padding: rem(58) 0;
+                @include max(720px){
+                    padding: rem(49) 0;
+                }
+            }
+        }
+    }
+}
