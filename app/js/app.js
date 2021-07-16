@@ -12,7 +12,6 @@ gsap.to('progress', {
 let intro = document.querySelector('.top');
 let rotate = document.querySelector('.top-l')
 window.addEventListener('load',()=>{
-    document.body.classList.remove('overflow')
     gsap.to('.top-t',{
         opacity:1,
         x:-600,
@@ -26,6 +25,7 @@ window.addEventListener('load',()=>{
         rotate.classList.add('rotate')
     },100)
     setTimeout(()=>{
+        document.body.classList.remove('overflow')
         intro.style.transform = 'translateY(-100%)'
         // intro.style.opacity = '0.5'
         document.body.classList.remove('overflow')
