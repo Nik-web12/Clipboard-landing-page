@@ -13,15 +13,15 @@ let intro = document.querySelector('.top');
 let rotate = document.querySelector('.top-l')
 window.addEventListener('load',()=>{
     document.body.classList.remove('overflow')
-//     gsap.from('.top-t',{
-//         opacity:0,
-//         x:-600,
-//         duration:3,
-//     })
-//     gsap.from('.line',{
-//         height:0,
-//         duration:2,
-//     })
+    gsap.from('.top-t',{
+        opacity:0,
+        x:-600,
+        duration:3,
+    })
+    gsap.from('.line',{
+        height:0,
+        duration:2,
+    })
     setTimeout(()=>{
         rotate.classList.add('rotate')
     },100)
