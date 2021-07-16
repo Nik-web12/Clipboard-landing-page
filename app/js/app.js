@@ -21,15 +21,15 @@ window.addEventListener('load',()=>{
         height:0,
         duration:2,
     })
-//     gsap.to('.top-log',{
-//         x: 100,
-//         duration:3,
-//     })
     setTimeout(()=>{
         rotate.classList.add('rotate')
     },100)
     setTimeout(()=>{
         document.body.classList.remove('overflow')
+        gsap.to('.top-log',{
+        scale: 0,
+        duration:3,
+    })
     },3200)
     setTimeout(()=>{
         document.body.classList.remove('overflow')
