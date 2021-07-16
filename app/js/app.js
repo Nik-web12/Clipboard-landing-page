@@ -26,6 +26,9 @@ window.addEventListener('load',()=>{
     },100)
     setTimeout(()=>{
         document.body.classList.remove('overflow')
+    },3600)
+    setTimeout(()=>{
+        document.body.classList.remove('overflow')
         intro.style.transform = 'translateY(-100%)'
         // intro.style.opacity = '0.5'
         document.body.classList.remove('overflow')
