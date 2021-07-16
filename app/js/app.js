@@ -30,13 +30,13 @@ window.addEventListener('load',()=>{
         scale: 0,
         duration:3,
     })
-    },3200)
+    },2500)
     setTimeout(()=>{
         document.body.classList.remove('overflow')
         intro.style.transform = 'translateY(-100%)'
         // intro.style.opacity = '0.5'
         document.body.classList.remove('overflow')
-    },3300)
+    },3000)
 })
 
 
