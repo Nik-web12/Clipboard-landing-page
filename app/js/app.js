@@ -18,7 +18,7 @@ window.addEventListener('load',()=>{
         x:-600,
         duration:3,
     })
-    gsap.from('.line',{
+    gsap.to('.line',{
         height:0,
         duration:2,
     })
