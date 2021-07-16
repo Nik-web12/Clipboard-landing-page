@@ -28,7 +28,7 @@ window.addEventListener('load',()=>{
         document.body.classList.remove('overflow')
         gsap.to('.top-log',{
         scale: 0,
-        duration:3,
+        duration:2,
     })
     },2500)
     setTimeout(()=>{
