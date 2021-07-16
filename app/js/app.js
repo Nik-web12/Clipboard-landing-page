@@ -15,11 +15,11 @@ window.addEventListener('load',()=>{
     gsap.to('.top-t',{
         opacity:1,
         x:-600,
-        duration:3,
+        duration:4,
     })
     gsap.to('.line',{
         height:0,
-        duration:2,
+        duration:3,
     })
     setTimeout(()=>{
         rotate.classList.add('rotate')
