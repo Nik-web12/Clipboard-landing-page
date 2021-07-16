@@ -22,8 +22,8 @@ window.addEventListener('load',()=>{
         duration:2,
     })
     gsap.to('.top-log',{
-        scale:0,
-        duration:2,
+        x: 500,
+        duration:2.5,
     })
     setTimeout(()=>{
         rotate.classList.add('rotate')
