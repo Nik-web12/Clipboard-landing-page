@@ -13,8 +13,8 @@ let intro = document.querySelector('.top');
 let rotate = document.querySelector('.top-l')
 window.addEventListener('load',()=>{
     document.body.classList.remove('overflow')
-    gsap.from('.top-t',{
-        opacity:0,
+    gsap.to('.top-t',{
+        opacity:1,
         x:-600,
         duration:3,
     })
