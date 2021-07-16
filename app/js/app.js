@@ -10,7 +10,7 @@ gsap.to('progress', {
 
 // ***************** Loading Animation ****************** \\
 let intro = document.querySelector('.top');
-let rotate = document.querySelector('.top-log')
+let rotate = document.querySelector('.top-l')
 window.addEventListener('load',()=>{
     gsap.to('.top-t',{
         opacity:1,
