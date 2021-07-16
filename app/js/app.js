@@ -12,7 +12,7 @@ gsap.to('progress', {
 let intro = document.querySelector('.top');
 let rotate = document.querySelector('.top-l')
 window.addEventListener('load',()=>{
-    document.body.classList.add('overflow')
+    document.body.classList.remove('overflow')
 //     gsap.from('.top-t',{
 //         opacity:0,
 //         x:-600,
