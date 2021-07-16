@@ -36,7 +36,7 @@ window.addEventListener('load',()=>{
         intro.style.transform = 'translateY(-100%)'
         // intro.style.opacity = '0.5'
         document.body.classList.remove('overflow')
-    },3000)
+    },3200)
 })
 
 
